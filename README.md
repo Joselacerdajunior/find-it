@@ -7,7 +7,7 @@ A web application developed for announcing and finding job/services opportunitie
 In this application the technologies below will be used:
 
 - Javascript
-- React
+- React Native
 
 ## Setup
 
