@@ -19,10 +19,16 @@ git clone https://github.com/BrunoUemura/fix-it.git
 
 Or download the zip file directly from [Github](https://github.com/BrunoUemura/fix-it/tree/fix-it_development) and unzip it.
 
-Afterward, open the project and run the following commands:
+### Front-end setup
+
+After, downloading open the `client` direcotiry in the project and run the following commands:
 
 ### To run the project
+To install the dependencies
+- **_npm install_**
 
+To run de project.
+Make sure to start the Android or iPhone emulator.
 - **_npm start_**
 
 ## Authors
