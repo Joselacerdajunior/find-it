@@ -28,3 +28,4 @@ Afterward, open the project and run the following commands:
 ## Authors
 
 - Bruno Hideki Uemura [linkedin](https://www.linkedin.com/in/bruno-hideki-uemura-918589139/), [Github](https://github.com/BrunoUemura)
+- Jose Lacerda Junior
