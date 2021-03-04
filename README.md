@@ -25,11 +25,11 @@ After, downloading open the `client` direcotiry in the project and run the follo
 
 ### To run the project
 To install the dependencies
-- **_npm install_**
+- `npm install`
 
 To run de project.
 Make sure to start the Android or iPhone emulator.
-- **_npm start_**
+- `npm start`
 
 ## Authors
 
