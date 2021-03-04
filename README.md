@@ -24,12 +24,9 @@ Or download the zip file directly from [Github](https://github.com/BrunoUemura/f
 After, downloading open the `client` direcotiry in the project and run the following commands:
 
 ### To run the project
-To install the dependencies
-- `npm install`
+- To install the dependencies `npm install`
 
-To run de project.
-Make sure to start the Android or iPhone emulator.
-- `npm start`
+- To run de project, make sure to start the Android or iPhone emulator `npm start`
 
 ## Authors
 
