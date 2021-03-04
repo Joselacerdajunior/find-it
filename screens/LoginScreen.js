@@ -2,6 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View, KeyboardAvoidingView } from "react-native";
 import { Button, Input, Image } from "react-native-elements";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import { auth } from "../firebase";
 
 const LoginScreen = ({ navigation }) => {
@@ -31,7 +32,7 @@ const LoginScreen = ({ navigation }) => {
       <Image
         source={{
           uri:
-            "https://upload.wikimedia.org/wikipedia/commons/5/56/Logo_Signal..png",
+            "https://i.pinimg.com/originals/0f/61/ba/0f61ba72e0e12ba59d30a50295964871.png",
         }}
         style={{ width: 200, height: 200 }}
       />
@@ -53,13 +54,16 @@ const LoginScreen = ({ navigation }) => {
         />
       </View>
 
-      <Button containerStyle={styles.button} onPress={signIn} title="Login" />
-      <Button
-        containerStyle={styles.button}
+      <TouchableOpacity style={styles.buttonLogin} onPress={signIn}>
+        <Text style={styles.loginText}>Login</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        containerStyle={styles.buttonRegister}
         onPress={() => navigation.navigate("Register")}
-        type="outline"
         title="Register"
-      />
+      >
+        <Text style={styles.loginText}>Register</Text>
+      </TouchableOpacity>
       <View style={{ height: 100 }} />
     </KeyboardAvoidingView>
   );
@@ -77,8 +81,29 @@ const styles = StyleSheet.create({
   inputContainer: {
     width: 300,
   },
-  button: {
+  buttonLogin: {
+    backgroundColor: "#9b34eb",
     width: 200,
+    height: 40,
     marginTop: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center",
+    borderRadius: 5,
+  },
+  buttonRegister: {
+    backgroundColor: "#9b34eb",
+    color: "#fff",
+    width: 200,
+    height: 40,
+    marginTop: 10,
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center",
+    borderRadius: 5,
+  },
+  loginText: {
+    color: "#fff",
+    fontSize: 20,
   },
 });
